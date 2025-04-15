@@ -1,0 +1,37 @@
+./kafka-topics.sh --create \
+--topic workflow-audit \
+--bootstrap-server localhost:9092 \
+--partitions 3 \
+--replication-factor 1
+
+./kafka-topics.sh --create \
+--topic workflow-error \
+--bootstrap-server localhost:9092 \
+--partitions 3 \
+--replication-factor 1
+
+./kafka-topics.sh --create \
+--topic workflow-step \
+--bootstrap-server localhost:9092 \
+--partitions 3 \
+--replication-factor 1
+
+./kafka-topics.sh --create \
+--topic workflow-step-complete \
+--bootstrap-server localhost:9092 \
+--partitions 3 \
+--replication-factor 1
+
+./kafka-topics.sh --create \
+--topic workflow-user-task \
+--bootstrap-server localhost:9092 \
+--partitions 3 \
+--replication-factor 1
+
+./kafka-topics.sh --list --bootstrap-server localhost:9092
+
+workflow-audit
+workflow-error
+workflow-step
+workflow-step-complete
+workflow-user-task

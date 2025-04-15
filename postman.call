@@ -1,0 +1,9 @@
+http://localhost:8080/workflow/start/11111111-1111-1111-1111-111111111111
+
+Body:
+
+{
+    "invoiceId": "INV-1234",
+    "amount": 950,
+    "currency": "USD"
+}
